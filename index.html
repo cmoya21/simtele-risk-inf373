@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102424">
+  <meta name="description" content="Laboratorio académico de métodos numéricos para un sistema hipotético de transporte por cable.">
+  <title>SIMTELE-RISK · Laboratorio numérico</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./sql-wasm-browser.js"></script>
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="SIMTELE-RISK, inicio">
+        <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 10 28 5M15 8l2 6M9 16l15-3 2 12-15 3zM12 20l11-2M17 15l1.5 7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+        <span><strong>SIMTELE<span>-RISK</span></strong><small>LABORATORIO NUMÉRICO</small></span>
+      </a>
+      <nav id="navigation"></nav>
+      <div class="sidebar-bottom">
+        <span class="academic-tag"><span></span> ENTORNO ACADÉMICO</span>
+        <strong>INF 373</strong>
+        <span>Métodos Numéricos</span>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <button type="button" id="menu-toggle" class="button icon-button mobile-only" aria-expanded="false" aria-controls="navigation" aria-label="Abrir menú">☰</button>
+        <div class="breadcrumb"><span>Laboratorio</span><span aria-hidden="true">/</span><strong id="breadcrumb">Panel general</strong></div>
+        <span class="status-pill"><i></i> Datos sintéticos</span>
+      </header>
+      <main id="main" tabindex="-1" aria-busy="true"><div class="loading">Cargando laboratorio…</div></main>
+      <footer class="footer"><span>SIMTELE-RISK · Proyecto académico INF 373</span><span>Escenarios hipotéticos inspirados en el transporte por cable de La Paz.</span></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript>Activa JavaScript para ejecutar los experimentos.</noscript>
+</body>
+</html>
